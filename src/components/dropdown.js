@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Grid } from '@material-ui/core'
 
 const Dropdown = () => {
 
     //items array
     const dropdownData = ["Yes", "Probably Not"]
-        
+
     //state 
     const [dropdownVisibility, setDropdownVisibility] = useState(true);
 
@@ -51,7 +51,7 @@ const Dropdown = () => {
                                             dropdownVisibility &&
 
                                             dropdownData.map((item, index) => {
-                                                return <a className="dropA" href="#" onClick={handleChange} > {item} </a>
+                                                return <a href="#" onClick={handleChange} > {item} </a>
                                             })
                                         }
                                     </Grid>
